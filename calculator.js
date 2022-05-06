@@ -42,7 +42,7 @@ function calculateMonthlyPayment(values) {
   const i = (values.rate / 100) / 12;
   const n = values.years * 12;
   let monthlyPayment = (p * i) / (1 - (1 + i)**(-n));
-  return `$${monthlyPayment.toFixed(2)}`;
+  return `${monthlyPayment.toFixed(2)}`;
 }
 
 // Given a string representing the monthly payment value,
